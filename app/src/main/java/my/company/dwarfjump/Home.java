@@ -18,15 +18,36 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
 
         Button score=(Button)findViewById(R.id.scorebutton);
         score.setOnClickListener(this);
+
+        Button game=(Button)findViewById(R.id.startbutton);
+        game.setOnClickListener(this);
+
+        Button aboutUS=(Button)findViewById(R.id.aboutus);
+        aboutUS.setOnClickListener(this);
         }
 
 
     @Override
     public void onClick(View view) {
 
-        Intent scoreboard = new Intent(Home.this, scoreboard.class);
+        switch (view.getId()) {
 
-        startActivity(scoreboard);
+            case R.id.scorebutton:
+                Intent scoreboard = new Intent(Home.this, scoreboard.class);
+                startActivity(scoreboard);
+                break;
+            case R.id.startbutton:
+                Intent startgame = new Intent(Home.this, MainActivity.class);
+                startActivity(startgame);
+                break;
+            case R.id.aboutus:
+                Intent aboutus = new Intent(Home.this, AboutUs.class);
+                startActivity(aboutus);
+                break;
+
+            default:
+                break;
+        }
 
     }
 }
