@@ -15,11 +15,16 @@
         android:text="@string/startgame"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+
         android:textSize="40dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/buttonstyle"
         android:padding="10dp"
         android:textColor="@color/Textcolour"
         android:fontFamily="monospace"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
         />
     <Button
         android:id="@+id/scorebutton"
@@ -28,11 +33,14 @@
         android:text="@string/scoreboard"
         android:layout_below="@id/startbutton"
         android:layout_centerHorizontal="true"
+
         android:textSize="40dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/buttonstyle"
         android:padding="10dp"
         android:textColor="@color/Textcolour"
         android:fontFamily="monospace"
+
+        android:layout_marginTop="10dp"
         />
     <Button
         android:id="@+id/aboutus"
@@ -41,13 +49,19 @@
         android:text="@string/aboutus"
         android:layout_below="@id/scorebutton"
         android:layout_centerHorizontal="true"
+
         android:textSize="40dp"
         android:gravity="center"
-        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/buttonstyle"
+
         android:paddingLeft="42dp"
         android:paddingRight="41dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:textColor="@color/Textcolour"
         android:fontFamily="monospace"
+
+        android:layout_marginTop="10dp"
         />
 </RelativeLayout>
 
