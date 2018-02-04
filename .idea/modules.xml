@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DwarfJump.iml" filepath="$PROJECT_DIR$/DwarfJump.iml" />
+      <module fileurl="file://C:\Users\Johnny\Desktop\Fh-Kufstein\FH 3.Semester\Software Mobile Projekt\DwarfJump\DwarfJump.iml" filepath="C:\Users\Johnny\Desktop\Fh-Kufstein\FH 3.Semester\Software Mobile Projekt\DwarfJump\DwarfJump.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Johnny\Desktop\Fh-Kufstein\FH 3.Semester\Software Mobile Projekt\DwarfJump\app\app.iml" filepath="C:\Users\Johnny\Desktop\Fh-Kufstein\FH 3.Semester\Software Mobile Projekt\DwarfJump\app\app.iml" />
     </modules>
   </component>
 </project>
