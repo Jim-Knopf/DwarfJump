@@ -19,6 +19,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:padding="10dp"
         android:textColor="@color/Textcolour"
+        android:fontFamily="monospace"
         />
     <Button
         android:id="@+id/scorebutton"
@@ -31,6 +32,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:padding="10dp"
         android:textColor="@color/Textcolour"
+        android:fontFamily="monospace"
         />
     <Button
         android:id="@+id/AboutUS"
@@ -45,6 +47,7 @@
         android:paddingLeft="42dp"
         android:paddingRight="41dp"
         android:textColor="@color/Textcolour"
+        android:fontFamily="monospace"
         />
 </RelativeLayout>
 
