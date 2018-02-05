@@ -3,5 +3,5 @@
     <string name="startgame">&#160;Start Game!&#160;</string>
     <string name="scoreboard">&#160;ScoreBoard&#160;</string>
     <string name="aboutus">About Us</string>
-    <string name="madeby">Made by: \n Thomas the Steel Engine \n Robin Spechtenhauser \n Johnny la Gente Rieder</string>
+    <string name="madeby">&#169; \n Thomas the Steel Engine \n Robin Spechtenhauser \n Johnny la Gente Rieder</string>
 </resources>
