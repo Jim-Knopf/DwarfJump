@@ -16,7 +16,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button score=(Button)findViewById(R.id.scorebutton);
+        Button score=(Button)findViewById(R.id.rulebutton);
         score.setOnClickListener(this);
 
         Button game=(Button)findViewById(R.id.startbutton);
@@ -32,8 +32,8 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
 
         switch (view.getId()) {
 
-            case R.id.scorebutton:
-                Intent scoreboard = new Intent(Home.this, scoreboard.class);
+            case R.id.rulebutton:
+                Intent scoreboard = new Intent(Home.this, DrinkingRules.class);
                 startActivity(scoreboard);
                 break;
             case R.id.startbutton:

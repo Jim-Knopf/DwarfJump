@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">DwarfJump</string>
+    <string name="app_name">Touch the Drinking Dwarf</string>
     <string name="startgame">&#160;Start Game!&#160;</string>
-    <string name="scoreboard">&#160;ScoreBoard&#160;</string>
+    <string name="DrinkingRules">&#160;Rules&#160;</string>
     <string name="aboutus">About Us</string>
     <string name="madeby">&#169; \n Thomas the Steel Engine \n Robin Spechtenhauser \n Johnny la Gente Rieder</string>
 </resources>

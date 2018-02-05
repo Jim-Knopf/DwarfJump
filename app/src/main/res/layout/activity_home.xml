@@ -27,10 +27,10 @@
         android:layout_marginTop="5dp"
         />
     <Button
-        android:id="@+id/scorebutton"
+        android:id="@+id/rulebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/scoreboard"
+        android:text="@string/DrinkingRules"
         android:layout_below="@id/startbutton"
         android:layout_centerHorizontal="true"
 
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/aboutus"
-        android:layout_below="@id/scorebutton"
+        android:layout_below="@id/rulebutton"
         android:layout_centerHorizontal="true"
 
         android:textSize="40dp"

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="my.company.dwarfjump.DrinkingRules">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/drinkingrules"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Never Stop Drinking!"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/rule1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkingrules"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="1. Take a shot before starting the Game"
+        />
+
+    <TextView
+        android:id="@+id/rule2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="2. Select your Player!"
+        />
+
+    <TextView
+        android:id="@+id/rule3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="3. Press the start button, the random timer will Start"
+
+        />
+
+    <TextView
+        android:id="@+id/rule4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="4. The first Player who presses the button will lose \n (Yeah, you have to drink!)"
+        />
+
+    <TextView
+        android:id="@+id/rule5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="5. When the dwarf stops drinking and a Player hasn't pressed yet, the Player has to drink with the Dwarf "
+        />
+
+    <TextView
+        android:id="@+id/rule6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="6. The looser has to drink 1 Shot, 3 Nips of a nice Longdrink or 0,3l best Dwarfish Beer! \n\n"
+        />
+
+    <TextView
+        android:id="@+id/rule7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule6"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Most Important Rule: \n\n The Dwarf is your best friend, so honor him and \n take a shot!"
+        />
+
+    
+</>
