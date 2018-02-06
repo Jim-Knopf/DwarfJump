@@ -37,7 +37,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
                 startActivity(scoreboard);
                 break;
             case R.id.startbutton:
-                Intent startgame = new Intent(Home.this, MainActivity.class);
+                Intent startgame = new Intent(Home.this, StartGameActivity.class);
                 startActivity(startgame);
                 break;
             case R.id.aboutus:
