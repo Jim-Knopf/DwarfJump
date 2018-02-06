@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drunkendwarf"
+    tools:context="my.company.dwarfjump.StartGameActivity">
+
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="102dp"
+        android:background="@drawable/buttonstyle"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="Start Countdown"
+        android:textColor="@color/Textcolour"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Player 1"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_green_light"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Player 2"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Player 3"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Player 4"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_purple"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

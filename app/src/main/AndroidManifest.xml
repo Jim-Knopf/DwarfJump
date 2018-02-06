@@ -22,10 +22,8 @@
             android:label="@string/aboutus" />
         <activity
             android:name=".DrinkingRules"
-            android:label="@string/DrinkingRules"
-            >
-
-        </activity>
+            android:label="@string/DrinkingRules"></activity>
+        <activity android:name=".StartGameActivity"></activity>
     </application>
 
 </manifest>
