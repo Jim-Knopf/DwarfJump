@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Touch the Drinking Dwarf</string>
+    <string name="app_name">DrinkingDwarf</string>
     <string name="startgame">&#160;Start Game!&#160;</string>
     <string name="DrinkingRules">&#160;Rules&#160;</string>
     <string name="aboutus">About Us</string>

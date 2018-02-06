@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="my.company.dwarfjump.AboutUs"
-    android:background="@drawable/drunkendwarf_withbackground"
+    android:background="@drawable/notdrunken"
+    android:id="@+id/aboutus"
     >
     <TextView
         android:text="@string/madeby"
@@ -15,5 +16,11 @@
         android:textColor="@android:color/black"
         />
 
-
+    <Button
+        android:id="@+id/drinklittledwarf"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"/>
 </RelativeLayout>
