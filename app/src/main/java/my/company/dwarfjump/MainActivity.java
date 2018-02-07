@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     protected int time2;
     protected int time3;
     protected int time4;
+    RelativeLayout r3;
 
 
     @Override
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         final TextView countdownTimer = (TextView) findViewById(R.id.countdown);
         final TextView looserPlayer = (TextView) findViewById(R.id.looser);
+        r3 = (RelativeLayout) findViewById(R.id.screenchangemain);
 
         final Button reset = (Button) findViewById(R.id.reset);
         reset.setOnClickListener(this);
@@ -52,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             @Override
             public void run() {
                 Toast.makeText(MainActivity.this, "TIME'S RUNNING OUT!!!", Toast.LENGTH_SHORT).show();
+                r3.setBackgroundResource(R.drawable.drunkendwarfdifferent);
+
             }
         }, halftime);
 

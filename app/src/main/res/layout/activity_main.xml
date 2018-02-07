@@ -5,9 +5,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/drunkendwarfdifferent"
+    android:background="@drawable/drunkendwarf"
     tools:context="my.company.dwarfjump.MainActivity">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/screenchangemain">
 
     <View
         android:id="@+id/touchpad1"
@@ -169,5 +172,5 @@
         android:elevation="5dp"
         android:textColor="@color/Textcolour"
         android:visibility="invisible"/>
-
+</RelativeLayout>
 </RelativeLayout>
