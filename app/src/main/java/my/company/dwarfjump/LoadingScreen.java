@@ -2,6 +2,7 @@ package my.company.dwarfjump;
 
 import android.content.Intent;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +28,11 @@ public class LoadingScreen extends AppCompatActivity {
         setContentView(R.layout.activity_loading_screen);
         getSupportActionBar().hide();
 
+        MediaPlayer mp = MediaPlayer.create(LoadingScreen.this, R.raw.clank
+        );
+        mp.start();
+
+
         r2 = (RelativeLayout) findViewById(R.id.loadingpage2);
         Timer t = new Timer();
         t.scheduleAtFixedRate(new TimerTask() {
@@ -49,10 +55,11 @@ public class LoadingScreen extends AppCompatActivity {
         int secondsDelayed = 1;
         new Handler().postDelayed(new Runnable() {
             public void run() {
+
                 startActivity(new Intent(LoadingScreen.this, Home.class));
                 finish();
             }
-        }, secondsDelayed * 4000);
+        }, secondsDelayed * 6500);
 
 
 

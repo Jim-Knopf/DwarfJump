@@ -2,6 +2,7 @@ package my.company.dwarfjump;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -41,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
+        MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.drunkendwarf
+        );
+        mp.start();
+
         final TextView countdownTimer = (TextView) findViewById(R.id.countdown);
         final TextView looserPlayer = (TextView) findViewById(R.id.looser);
         r3 = (RelativeLayout) findViewById(R.id.screenchangemain);
@@ -76,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 countdownTimer.setText(String.valueOf(counter));
                 highestTime();
                 counter++;
+
             }
             public void onFinish(){
                 reset.setVisibility(View.VISIBLE);
