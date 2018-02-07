@@ -3,6 +3,7 @@ package my.company.dwarfjump;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -46,7 +47,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         Random random = new Random();
         final int time = (random.nextInt(40000 - 5000) + 5000);
-        final int halftime = time / 2;
+        final int halftime = time / 2 - 143;
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, "TIME'S RUNNING OUT!!!", Toast.LENGTH_SHORT).show();
+            }
+        }, halftime);
 
         touchpad1 = findViewById(R.id.touchpad1);
         touchpad2 = findViewById(R.id.touchpad2);
@@ -61,9 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         new CountDownTimer(time, 100){
 
             public void onTick(long millisUntilFinished){
-                if (millisUntilFinished == time / 2){
-                    Toast.makeText(MainActivity.this, "Halftime!!!", Toast.LENGTH_SHORT).show();
-                }
                 countdownTimer.setText(String.valueOf(counter));
                 highestTime();
                 counter++;
