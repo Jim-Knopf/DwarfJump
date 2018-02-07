@@ -19,6 +19,7 @@
         android:padding="10dp"
         android:text="Start Countdown"
         android:textColor="@color/Textcolour"
+        android:elevation="5dp"
         android:textSize="30dp" />
 
     <TextView

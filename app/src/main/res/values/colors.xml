@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="Textcolour">#FFFF</color>
     <color name="clicked">#747674</color>
+    <color name="red">#fb1120</color>
+    <color name="blue">#2759ff</color>
+    <color name="grey">#a8a9a8</color>
 </resources>

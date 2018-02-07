@@ -17,12 +17,27 @@
         android:layout_alignParentTop="true"></View>
 
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:text="Player 1"
+        android:id="@+id/player1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignEnd="@+id/touchpad1"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="37dp"
+        android:text="100"
+        android:textColor="@android:color/black"
         android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Player 1"
+        android:fontFamily="monospace"
         android:textColor="@android:color/holo_green_light"
-        android:layout_below="@+id/touchpad1"/>
+        android:layout_below="@+id/touchpad1"
+        android:id="@+id/textView2" />
 
     <View
         android:id="@+id/touchpad2"
@@ -33,10 +48,24 @@
         android:layout_alignParentRight="true"></View>
 
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:text="Player 2"
+        android:id="@+id/player2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignEnd="@+id/touchpad1"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="33dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
         android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Player 2"
+        android:fontFamily="monospace"
         android:textColor="@android:color/holo_blue_bright"
         android:layout_below="@+id/touchpad2"
         android:layout_alignParentRight="true"/>
@@ -49,10 +78,24 @@
         android:layout_alignParentBottom="true"></View>
 
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:text="Player 3"
+        android:id="@+id/player3_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignEnd="@+id/touchpad1"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/black"
         android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Player 3"
+        android:fontFamily="monospace"
         android:textColor="@android:color/holo_orange_light"
         android:layout_above="@+id/touchpad3"/>
 
@@ -65,11 +108,26 @@
         android:layout_alignParentRight="true"></View>
 
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:text="Player 4"
+        android:id="@+id/player4_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignEnd="@+id/touchpad1"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
         android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Player 4"
         android:textColor="@android:color/holo_purple"
+        android:fontFamily="monospace"
         android:layout_above="@+id/touchpad4"
         android:layout_alignParentRight="true"/>
 
@@ -80,15 +138,36 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textSize="70dp"
+        android:fontFamily="monospace"
         android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/looser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="monospace"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="60dp"
+        android:background="@color/grey"
+        android:elevation="5dp"
+        android:visibility="invisible"/>
 
     <Button
         android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/countdown"
+        android:layout_below="@+id/looser"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstyle"
+        android:fontFamily="monospace"
+        android:layout_marginTop="10dp"
         android:text="Reset"
+        android:textSize="30dp"
+        android:elevation="5dp"
+        android:textColor="@color/Textcolour"
         android:visibility="invisible"/>
 
 </RelativeLayout>

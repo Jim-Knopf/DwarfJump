@@ -12,6 +12,7 @@ public class StartGameActivity extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_game);
+        getSupportActionBar().hide();
 
         Button start_countdown = (Button) findViewById(R.id.start_game_button);
         start_countdown.setOnClickListener(this);
