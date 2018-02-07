@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.drunkendwarf
+        final MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.drunkendwarf
         );
         mp.start();
 
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 reset.setVisibility(View.VISIBLE);
                 countdownTimer.setVisibility(View.INVISIBLE);
                 looserPlayer.setVisibility(View.VISIBLE);
+                mp.stop();
             }
 
         }.start();
