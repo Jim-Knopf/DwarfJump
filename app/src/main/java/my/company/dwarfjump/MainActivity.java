@@ -113,28 +113,24 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                     player1Time.setVisibility(View.VISIBLE);
                     player1Time.setText(String.valueOf(counter));
                     time1 = counter;
-                    //highestTime();
 
                 } else if (view.getId() == R.id.touchpad2){
 
                     player2Time.setVisibility(View.VISIBLE);
                     player2Time.setText(String.valueOf(counter));
                     time2 = counter;
-                    //highestTime();
 
                 } else if (view.getId() == R.id.touchpad3){
 
                     player3Time.setVisibility(View.VISIBLE);
                     player3Time.setText(String.valueOf(counter));
                     time3 = counter;
-                    //highestTime();
 
                 } else if (view.getId() == R.id.touchpad4){
 
                     player4Time.setVisibility(View.VISIBLE);
                     player4Time.setText(String.valueOf(counter));
                     time4 = counter;
-                    //highestTime();
 
                 }
 
