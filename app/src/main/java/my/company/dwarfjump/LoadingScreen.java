@@ -59,7 +59,7 @@ public class LoadingScreen extends AppCompatActivity {
                 startActivity(new Intent(LoadingScreen.this, Home.class));
                 finish();
             }
-        }, secondsDelayed * 6500);
+        }, secondsDelayed * 6800);
 
 
 
